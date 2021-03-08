@@ -1,0 +1,105 @@
+* {box-sizing: border-box;}
+
+.navcontent{
+    display: flex;
+    justify-content: space-between;
+}
+.navitemfirst{
+    flex: 1 0 0;
+}
+div.navitemfirst > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.navitemlast > div.foot{
+    text-align: center;
+}
+div.navitemlast > div.foot > img{
+    margin: 2px;
+}
+div.navitemlast.head > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navitemlast{
+    flex: 2 0 0;
+}
+.navitemmiddle{
+    flex: 3 0 0;
+}
+div.navitemmiddle > nav.black > a{
+    color: #000;
+    text-decoration: none;
+    padding: 25px;
+    font-weight: bold;
+    font-size: large;
+    margin: 5px;
+
+}
+div.navitemmiddle > nav.white > a{
+    color: #fff;
+    text-decoration: none;
+    padding: 25px;
+    margin: 5px;
+    font-weight: bold;
+    font-size: large;
+}
+.footer{
+    background-color: grey;
+    padding: 30px;
+}
+.header{
+    padding: 30px;
+}
+.secondaryfooter{
+    text-align: center;
+    color: #383838;
+    padding: 10px;
+
+}
+.banner1{
+    background-image: url("JS_Data/images/banner1.png");
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.bannertext{
+    text-align: left;
+    position: absolute;
+    top: 20%;
+    color: #fff;
+    margin-left: 175px;
+}
+.bannertext h1{
+    font-size: 65px;
+}
+
+.bannertext div{
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 15px 50px;
+    text-align: center;
+    display:inline-block;
+}
+div.sildeshowcontent > a.prev , div.sildeshowcontent > a.next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+div.sildeshowcontent > a.next {
+    right: 0;
+}
+
+/* --- dev purpose ---*/
+.bdred{border: 2px solid red;}
+.bdblack{border: 2px solid black;}
+.bdyellow{border: 2px solid violet;}
