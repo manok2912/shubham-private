@@ -99,6 +99,77 @@ div.sildeshowcontent > a.next {
     right: 0;
 }
 
+.plansilder{
+    display: flex;
+    padding: 50px 0px;
+}
+.planhead{
+    flex: 2 0 0;
+    text-align: center;
+    padding-top: 100px;
+}
+.plantail{
+    flex: 1 0 0;
+    margin: 5px 10px;
+}
+
+.plantail h1,.plantail p{
+    margin: 10px 0px;
+    padding: 0px;
+}
+
+.plansilder a.next-plansilder{
+    position: absolute;
+    right: 0;
+    width: auto;
+    margin-top: 100px;
+    margin-right: 50px;
+}
+
+.planhead > span{
+    border: 2px solid rgb(24, 139, 177);
+    border-radius: 5px;
+    padding: 15px 50px;
+    text-align: center;
+    display:inline-block;
+}
+
+.planhead > span > a{
+    text-decoration: none;
+    color: #000;
+}
+.peoplemain{
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+}
+.peoplemain > h1{
+    padding-top: 50px;
+}
+.peopleslider{
+    display: flex;
+    padding: 100px 0px;
+}
+.peopletext{
+    padding: 50px;
+    background-color: #fff;
+    text-align: justify;
+    width: 60%;
+}
+.peopletext > span{
+    color: grey;
+}
+.peopletext > p{
+    font-size: 20px;
+}
+
+.peopleslider > img{
+    position: absolute;
+    right: 0;
+    padding-bottom: 3000px;
+    margin-right: 250px;
+}
+
+
 /* --- dev purpose ---*/
 .bdred{border: 2px solid red;}
 .bdblack{border: 2px solid black;}
