@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham</title>
+</head>
+<style>
+* {box-sizing: border-box;}
+.navcontent{
+    display: flex;
+    justify-content: space-between;
+}
+.navitemfirst{
+    flex: 1 0 0;
+}
+div.navitemfirst > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.navitemlast > div.foot{
+    text-align: center;
+}
+div.navitemlast > div.foot > img{
+    margin: 2px;
+}
+div.navitemlast.head > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navitemlast{
+    flex: 2 0 0;
+}
+.navitemmiddle{
+    flex: 3 0 0;
+}
+div.navitemmiddle > nav.black > a {
+    color: #000;
+    text-decoration: none;
+    padding: 25px;
+    font-weight: bold;
+    font-size: large;
+    margin: 5px;
+
+}
+div.navitemmiddle > nav.white > a{
+    color: #fff;
+    text-decoration: none;
+    padding: 25px;
+    margin: 5px;
+    font-weight: bold;
+    font-size: large;
+}
+.footer{
+    background-color: grey;
+    padding: 30px;
+}
+.header{
+    padding: 30px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.secondaryfooter{
+    text-align: center;
+    color: #383838;
+    padding: 10px;
+
+}
+.navlink:hover{
+    color: #0066cc;
+    border-bottom: 1px solid #0059b3;
+}
+.row{
+    display: flex;
+    bottom: 1px solid #000;
+}
+.column{
+    padding: 30px;
+}
+.cfirst, .cmiddle{
+    flex: 1 0 0;
+}
+.clast{
+    flex: 3 0 0;
+}
+.cmiddle{
+    border-left:1px solid #DCDCDC;
+}
+.column a{
+    display: block;
+    color: grey;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid #DCDCDC;
+}
+.column a:hover{
+    color: #0066cc !important;
+    text-decoration: none;
+}
+.cfirst{
+    text-align: right;
+}
+.imgrow{
+    display: flex;
+}
+.imglast{
+    flex: 1 0 0;
+    margin-bottom: 20px;
+}
+.lastdiv{
+    flex: 3 0 0;
+    margin-bottom: 20px;
+    width: 50%;
+}
+.imglast img{
+    width: 100%;
+}
+.lastdiv{
+    margin-left: 20px;
+}
+.lastdiv p{
+    color:grey;
+}
+.hide {
+  display: none;
+}
+.myDIV:hover + .hide {
+  display: block;
+}
+</style>
+
+<body>
+
+<div class="navcontent header myDIV">
+    <div class="navitemfirst"><img src="JS_Data/images/Logo.svg" alt="logo"></div>
+    <div class="navitemmiddle">
+        <nav class="black">
+            <a href="#" ><span class="navlink">Home</span></a>
+            <a href="#"><span class="navlink">Plans</span></a>
+            <a href="#" ><span class="navlink">Member</span></a>
+            <a href="#" ><span class="navlink">Blog</span></a>
+            <a href="#" ><span class="navlink">Contact</span></a>
+        </nav>    
+    </div>
+    <div class="navitemlast head"><img src="JS_Data/images/search-24px.svg" alt="search"></div>
+</div>
+
+
+<div class="dropdown-content hide">  
+    <div class="row">
+      <div class="column cfirst">
+        <a href="#">Lorem Ipsum &emsp;&emsp;&emsp; &#10142;</a>
+        <a href="#">Lorem Ipsum &emsp;&emsp;&emsp; &#10142;</a>
+        <a href="#">Lorem Ipsum &emsp;&emsp;&emsp; &#10142;</a>
+        <a href="#">Lorem Ipsum &emsp;&emsp;&emsp; &#10142;</a>
+        <a href="#">Lorem Ipsum &emsp;&emsp;&emsp; &#10142;</a>
+        <a href="#">Lorem Ipsum &emsp;&emsp;&emsp; &#10142;</a>
+      </div>
+      <div class="column cmiddle">
+        <a href="#">Lorem Ipsum</a>
+        <a href="#">Lorem Ipsum</a>
+        <a href="#">Lorem Ipsum</a>
+        <a href="#">Lorem Ipsum</a>
+        <a href="#">Lorem Ipsum</a>
+        <a href="#">Lorem Ipsum</a>
+      </div>
+      <div class="column clast">
+        <div class="imgrow">
+            <div class="imglast"><img src="JS_Data/images/pic04.jpg" alt=""></div>
+            <div class="lastdiv">
+                <h4>Lorem Ipsum</h5>
+                <p>Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum</p>
+            </div>
+        </div>
+        <div class="imgrow">
+            <div class="imglast"><img src="JS_Data/images/pic04.jpg" alt=""></div>
+            <div class="lastdiv">
+                <h4>Lorem Ipsum</h5>
+                <p>Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum</p>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="navcontent footer">
+    <div class="navitemfirst"><img src="JS_Data/images/Logo_footer.svg" alt="logo"></div>
+    <div class="navitemmiddle">
+        <nav class="white">
+            <a href="#"><span class="navlink">Home</span></a>
+            <a href="#" >Plans</a>
+            <a href="#" >Member</a>
+            <a href="#" >Blog</a>
+            <a href="#" >Contact</a>
+        </nav>
+    </div>
+    <div class="navitemlast">
+        <div class="foot">
+            <img src="JS_Data/images/fb.svg" alt="fb">
+            <img src="JS_Data/images/insta.svg" alt="ig">
+            <img src="JS_Data/images/linkedin.svg" alt="linkedin">
+            <img src="JS_Data/images/youtube.svg" alt="youtube">
+            <img src="JS_Data/images/twitter.svg" alt="twitter">
+        </div>
+    </div>
+</div>
+
+<div class="secondaryfooter">&#169; Deck, 2021 All Right Reserved</div>
+
+</body>
+<script src="index.js"></script>
+</html>
